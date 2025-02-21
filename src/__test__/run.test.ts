@@ -7,8 +7,6 @@
 // and call the test.
 // exit(1) if no test file found, hence enforcing a test file for each indicator
 
-/* eslint-disable no-console */
-
 import fs from 'node:fs';
 import path from 'node:path';
 

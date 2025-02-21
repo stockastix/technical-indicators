@@ -14,7 +14,6 @@ export default function* stddev(data: Float64Array, n: number) {
     throw new RangeError('Specified period is too big for computing stddev');
 
   while (i < n) {
-    // eslint-disable-next-line no-multi-assign
     ma += lastNValues[i] = data[i];
     i += 1;
   }
