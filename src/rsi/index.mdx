@@ -1,0 +1,102 @@
+---
+title: Relative Strength Indicator
+description: ''
+---
+
+### Usage
+
+`rsi(^GSPC, 14)`
+
+### Overview
+
+The Relative Strength Index (RSI) is a momentum oscillator used in technical analysis to measure the speed and magnitude of price changes. It oscillates between 0 and 100 and helps traders identify overbought and oversold conditions, potential reversal points, and the overall strength of a trend.
+
+### Formula
+
+RSI is calculated using the formula:
+
+```math
+RSI = 100 - \frac{100}{1 + RS}
+```
+
+Where:
+
+- \( RS \) (Relative Strength) = Average Gain over \( n \) periods ÷ Average Loss over \( n \) periods
+- \( n \): Typically set to 14 periods.
+
+### Typical Uses
+
+1. Overbought and Oversold Signals
+
+   - **Overbought:** RSI > 70 (price correction likely)
+   - **Oversold:** RSI < 30 (price rebound possible)
+
+2. Trend Confirmation
+
+   - RSI > 50 indicates an uptrend.
+   - RSI < 50 indicates a downtrend.
+
+3. Divergence Analysis
+
+   - **Bullish Divergence:** RSI makes higher lows while price makes lower lows.
+   - **Bearish Divergence:** RSI makes lower highs while price makes higher highs.
+
+4. Failure Swings
+   - A failure swing is when RSI breaks its previous high (bullish) or low (bearish) independent of price action.
+
+## Examples
+
+1. Overbought and Oversold Conditions
+
+   - **Scenario:** Stock XYZ, currently trading at $150, has an RSI of 80.
+     - Interpretation: The stock is in overbought territory and may face selling pressure soon.
+   - **Scenario:** Forex pair EUR/USD has an RSI of 25.
+     - Interpretation: The pair is in oversold territory, and a rebound might occur.
+
+2. Bullish Divergence
+
+   - **Example:** Gold prices make a new low at $1,850, but RSI forms a higher low, signaling waning bearish momentum.
+     - Signal: Possible reversal to the upside.
+
+3. Bearish Divergence
+   - **Example:** Bitcoin’s price reaches $40,000, forming a higher high, but RSI forms a lower high.
+     - Signal: Momentum is weakening, and a downward correction may follow.
+
+## Advanced Strategies
+
+### 1. RSI with Moving Averages
+
+- Combine RSI with moving averages (e.g., 50-day SMA) to confirm trend direction.
+  - **Example:** Use RSI to spot oversold conditions in an uptrend identified by the 50-day SMA.
+
+### 2. RSI Breakout Trading
+
+- Use RSI trendlines for breakout signals. Draw trendlines directly on the RSI indicator to spot momentum shifts.
+  - **Example:** If RSI breaks above its downtrend line while price consolidates, it may signal an impending upward breakout.
+
+### 3. Multi-Timeframe RSI Analysis
+
+- Combine RSI readings from different timeframes (e.g., daily and hourly charts).
+  - **Example:** If the RSI is oversold on the daily chart and shows a bullish divergence on the hourly chart, this may signal a strong buy opportunity.
+
+### 4. Dynamic Overbought/Oversold Levels
+
+- Adjust overbought/oversold thresholds based on volatility or trend strength:
+  - Use RSI > 80 for overbought in strong trends.
+  - Use RSI < 20 for oversold in strong trends.
+
+### 5. RSI and Fibonacci Retracements
+
+- Pair RSI with Fibonacci retracement levels to time entries during pullbacks in trends.
+  - **Example:** Wait for RSI to exit oversold territory near the 61.8% Fibonacci retracement level in an uptrend.
+
+### 6. RSI and Bollinger Bands
+
+- Use RSI to confirm Bollinger Band breakout signals.
+  - **Example:** If RSI exits oversold while the price breaks above the lower Bollinger Band, it suggests a reversal.
+
+## Limitations
+
+- RSI can generate false signals in choppy markets.
+- Overbought/oversold conditions do not guarantee immediate reversals.
+- Best used in combination with other indicators for confirmation.
