@@ -1,0 +1,56 @@
+---
+title: Simple Moving Average
+description: ''
+---
+
+## Usage
+
+```
+sma(^GSPC, 20)
+```
+
+## Overview
+
+The **Simple Moving Average (sma)** is a widely used technical indicator in trading that helps smooth price data over a specific period. By calculating the average price over a set number of periods, SMA eliminates short-term fluctuations and highlights the underlying trend.
+
+## Formula
+
+The SMA is calculated as follows:
+
+```math
+\frac{\sum{ P_n }}{n}
+```
+
+Where:
+
+- Pn = price at each period
+- n = number of periods in the moving average
+
+For example, a 50-day SMA is calculated by summing the closing prices of the last 50 days and dividing by 50.
+
+## Typical Uses of SMA
+
+1. **Trend Identification**
+
+   - If the price is **above** the SMA, it suggests an uptrend.
+   - If the price is **below** the SMA, it indicates a downtrend.
+
+2. **Support and Resistance Levels**
+
+   - In an **uptrend**, the SMA can act as a **support level** where price tends to bounce.
+   - In a **downtrend**, the SMA may serve as a **resistance level** where price faces selling pressure.
+
+3. **Smoothing Out Price Noise**
+   - SMA helps traders focus on overall trends rather than short-term volatility.
+
+## Historical Context
+
+The concept of moving averages has been around for decades and was first popularized by Charles Dow in the early 20th century as part of Dow Theory. The SMA became widely used in the mid-20th century when traders sought ways to analyze price trends in an objective manner.
+
+With the advent of modern computing and algorithmic trading, SMAs remain one of the most fundamental tools for trend analysis.
+
+## Limitations of SMA
+
+- **Lagging Indicator:** Since SMA is based on past prices, it **reacts slowly** to sudden market movements.
+- **Whipsaws in Sideways Markets:** In choppy markets, SMA crossovers **may generate false signals**.
+- **Ineffective in Fast-Moving Trends:** A simple moving average may not react quickly enough in high-volatility environments.

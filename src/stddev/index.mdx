@@ -1,0 +1,47 @@
+---
+title: Standard deviation
+description: ''
+---
+
+### Usage
+
+```
+stddev(^GSPC, 14)`
+```
+
+### Overview
+
+Standard deviation is a statistical measure that quantifies the amount of variation or dispersion in a set of values. In trading, it is widely used to assess the volatility of a security’s price over a specified period. A higher standard deviation indicates greater price fluctuations, while a lower value suggests more stable prices.
+
+### Formula
+
+The standard deviation for a series of prices over `N` periods is calculated as:
+
+```math
+σ = \sqrt{ \frac{\sum{ (xi - μ)² }}{ N } }
+```
+
+Where:
+
+- `σ` = standard deviation
+- `xi` = each individual price
+- `μ` = mean (average) price over the period
+- `N` = number of periods
+
+### Typical Use Cases
+
+- **Volatility Measurement:** Identifying periods of high or low market volatility.
+- **Bollinger Bands:** Used as a core component to define the width of the bands.
+- **Risk Management:** Adjusting position sizes based on recent volatility.
+- **Breakout Detection:** Spotting potential price breakouts after periods of low volatility.
+
+### Examples
+
+- Calculating the 20-day standard deviation of closing prices to determine current market volatility.
+- Using standard deviation to set the width of Bollinger Bands around a moving average.
+
+### Limitations
+
+- **Lagging Indicator:** Standard deviation is based on historical prices and may not predict future volatility.
+- **Sensitivity to Outliers:** Large price spikes can disproportionately affect the value.
+- **Does Not Indicate Direction:** It measures volatility, not whether the price will move up or down.
