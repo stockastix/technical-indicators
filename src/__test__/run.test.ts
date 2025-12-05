@@ -10,10 +10,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-import unittest from './util.js';
+import unittest from './util.ts';
 
 // recursive option requires node >18.17.0
-(<string[]>fs.readdirSync('./src', { recursive: true }))
+(fs.readdirSync('./src', { recursive: true }) as string[])
   .filter((file) => path.dirname(file) !== '__test__')
   .filter((file) => path.extname(file) === '.ts')
   .filter((file) => file !== 'index.ts')

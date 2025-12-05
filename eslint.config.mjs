@@ -60,7 +60,7 @@ export default [
         {
           js: 'never',
           json: 'never',
-          ts: 'never',
+          // ts: 'never',
         },
       ],
 

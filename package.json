@@ -17,7 +17,7 @@
     "prepare": "npm run build",
     "style:fix": "prettier src/**/*.ts --write",
     "style:check": "prettier src/**/*.ts --check",
-    "test": "cross-env FORCE_COLOR=true NODE_OPTIONS=\"--experimental-vm-modules --no-warnings --no-experimental-fetch\" jest --verbose --coverage"
+    "test": "cross-env FORCE_COLOR=true node --test --experimental-test-coverage"
   },
   "engines": {
     "node": ">18.17.0",
@@ -25,7 +25,6 @@
   },
   "devDependencies": {
     "@eslint/compat": "^2.0.0",
-    "@types/jest": "^30.0.0",
     "@types/node": "^24.10.1",
     "@typescript-eslint/eslint-plugin": "8.48.1",
     "@typescript-eslint/parser": "8.48.1",
@@ -33,9 +32,7 @@
     "eslint": "9.39.1",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-import": "^2.32.0",
-    "jest": "^30.2.0",
     "prettier": "3.7.4",
-    "ts-jest": "^29.4.6",
     "typescript": "^5.9.3"
   }
 }
