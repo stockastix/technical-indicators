@@ -17,7 +17,7 @@
     "prepare": "npm run build",
     "style:fix": "prettier src/**/*.ts --write",
     "style:check": "prettier src/**/*.ts --check",
-    "test": "cross-env FORCE_COLOR=true node --test --experimental-test-coverage"
+    "test": "node --test --experimental-test-coverage"
   },
   "engines": {
     "node": ">18.17.0",
@@ -28,7 +28,6 @@
     "@types/node": "^24.10.1",
     "@typescript-eslint/eslint-plugin": "8.48.1",
     "@typescript-eslint/parser": "8.48.1",
-    "cross-env": "^10.1.0",
     "eslint": "9.39.1",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-import": "^2.32.0",
