@@ -14,3 +14,14 @@ updates:
     directory: '/'
     schedule:
       interval: 'monthly'
+    # https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/optimizing-pr-creation-version-updates
+    groups:
+      typescript-dependencies:
+        patterns:
+          - '*typescript*'
+      prettier-dependencies:
+        patterns:
+          - '*prettier*'
+      eslint-dependencies:
+        patterns:
+          - '*eslint*'
